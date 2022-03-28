@@ -7,13 +7,12 @@ def main():
     decimal = [str(int(x, 8)) for x in strs]
     first_last_decimal = [x for x in decimal if x[0] == x[-1]]
 
-    ascending = 0
-    for x in strs:
-        if [*x] == sorted([*x]):
-            ascending += 1
+    ascending = [int(x, 8) for x in strs if [*x] == sorted([*x])]
 
     results = (
-        f"a) {len(first_last)}\n" f"b) {len(first_last_decimal)}\n" f"c) {ascending}\n"
+        f"a) {len(first_last)}\n"
+        f"b) {len(first_last_decimal)}\n"
+        f"c) {len(ascending)}, największa: {max(ascending)}, najmniejsza: {min(ascending)}\n"
     )
 
     print(results)
