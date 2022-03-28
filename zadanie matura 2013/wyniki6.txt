@@ -1,3 +1,3 @@
 a) 447
 b) 324
-c) 49, najwiêksza: 308975, najmniejsza: 20
+c) 49, najwiÄ™ksza: 308975, najmniejsza: 20
